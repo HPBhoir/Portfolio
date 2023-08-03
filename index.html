@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>HPbhoir</title>
+</head>
+
+<body>
+
+
+
+    <div id="navbar">
+        <div class="nav_adj">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#home">Home</a>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="navbar_scroll">
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#home">Home</a>
+    </div> -->
+
+    <!-- 
+    <div class="bgimg-1">
+        <div class="caption">
+        <span class="border">SCROLL DOWN</span>
+        </div>
+      </div> -->
+    <div id="home">
+        <div class="bgimg-1" style="padding:15px 15px; font-size:30px">
+
+            <div class="margin">
+
+                <div id="navbar_scroll">
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#home">Home</a>
+                </div>
+            </div>
+            <div class="margin">
+                <div class="name">Harshal Bhoir</div>
+                <div class="greet">Hello! Glad to see you here. This is a collection of my personal projects till now
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="projects">
+
+
+
+
+
+
+
+
+
+        <h3 style="text-align:center;">PROJECTS</h3>
+        <p>I have undertaken a diverse array of projects, covering various fields from machine learning to web
+            development. These ventures stand as a testament to my versatility and adaptability. Among them, several
+            have been formally presented as course projects at the esteemed University of Michigan, demonstrating the
+            level of rigor and quality invested in each endeavor.</p>
+
+
+
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">All Projects</button>
+            <button class="btn" onclick="filterSelection('nlp')"> NLP</button>
+            <button class="btn" onclick="filterSelection('ml')"> Machine Learning</button>
+            <button class="btn" onclick="filterSelection('web')">Web-development</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+            <div class="column nlp">
+                <div class="content">
+                    <img src="/images/SBD.png" alt="Sentence Boundary Detection" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Sentence Boundary Detection</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Sentence Boundary Detection</h4> -->
+            </div>
+
+            <div class="column ml house">
+                <div class="content">
+                    <img src="/images/house_price.jpg" alt="House" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">House Price Prediction</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>House Price Prediction</h4> -->
+            </div>
+
+            <div class="column nlp">
+                <div class="content">
+                    <img src="/images/senti.JPG" alt="Sentiment Analysis" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Sentiment Analysis</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Sentiment Analysis</h4> -->
+            </div>
+
+
+            <div class="column ml">
+                <div class="content">
+                    <img src="/images/plastic_mold.jpg" alt="Quality Prediction" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Quality Prediction</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Quality Prediction</h4> -->
+            </div>
+
+            <div class="column ml">
+                <div class="content">
+                    <img src="/images/stock.jpg" alt="Stock Price Prediciton" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Stock Price Prediciton</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Stock Price Prediciton</h4> -->
+            </div>
+
+            <div class="column nlp">
+                <div class="content">
+                    <img src="/images/collocation.jpg" alt="Collocation" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Collocation</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Collocation</h4> -->
+            </div>
+
+
+    
+            <div class="column web">
+                <div class="content">
+                    <img src="/images/pokemon.jpg" alt="Pokemon" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Pokemon</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Pokemon</h4> -->
+            </div>
+
+            <div class="column ml">
+                <div class="content">
+                    <img src="/images/customer_churn.jpg" alt="Customer Churn Prediction" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Customer Churn Prediction</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Customer Churn Prediction</h4> -->
+            </div>
+            
+
+            <div class="column ml">
+                <div class="content">
+                    <img src="/images/Bank.PNG" alt="Bank" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Bank</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Bank</h4> -->
+            </div>
+
+
+            <div class="column nlp">
+                <div class="content">
+                    <img src="/images/pos.PNG" alt="Parts of speech tagger" style="width:100%">
+                    <div class="image-overlay">
+                        <h4 class="project_title">Parts of speech tagger</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p></div>
+                </div>
+                <!-- <h4>Pokemon</h4> -->
+            </div>
+            
+
+
+            <!-- END GRID -->
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div id="about">
+        <div class="bgimg-2">
+            <div class="margin">
+
+                <div class="img_about">
+                    <div class="img">
+                        <img src="my.png" class="me">
+                    </div>
+
+
+                    <div class="about">
+                        <div>About Me</div>
+                        <div>I am a data scientist and generative artist. Previously I went to National University of
+                            Singapore, EPFL and Duke University.</div>
+                        <div>Besides data science and data storytelling, I also like contemporary art and travelling.
+                        </div>
+                        <div>Having lived in China, Singapore, Switzerland and the United States, I understand English,
+                            Chinese and French.</div>
+                        <div>I have given talks and workshops such as Introduction To Visualization for Women Who Code
+                            and
+                            Drawing with Data Workshop at Airbnb APAC.</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <div style="position:relative;">
+                <div class="footer">
+                    <div class="contact">Contact me:</div>
+                    <div class="logos">
+                        <a href="#"><img src="./images/email.png" class="logo"></a>
+                        <a href="#"><img src="./images/linkedin.png" class="logo"></a>
+                        <a href="#"><img src="./images/git.png" class="logo"></a>
+                        <a href="#"><img src="./images/whatsapp.png" class="logo"></a>
+                        <a href="#"><img src="./images/instagram.png" class="logo"></a>
+                    </div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, ab | Thank you!</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="java.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</html>

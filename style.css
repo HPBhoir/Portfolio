@@ -1,0 +1,503 @@
+:root {
+
+    /* --yellow: #ffd200; */
+    --yellow: #4f4e49;
+    --secondary-color: #575555;
+    --white: #ffffff;
+    --black: #000000;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100%;
+    /* margin: 0; */
+    /* font: 400 15px/1.8 "Lato", sans-serif; */
+    /* color: #777; */
+}
+
+/* ############################################################################
+############################################################################### */
+
+/* Slide down navbar */
+#navbar {
+    background-color: rgba(25, 25, 25, 0.8);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    padding: 0px 0;
+    z-index: 1;
+}
+#navbar a {
+    float: right;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 8px 0px 10px 40px;
+    text-decoration: none;
+    font-size: 13px;
+}
+#navbar a:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+.nav_adj{
+    margin-right: 100px;
+}
+
+/* ############################################################################
+############################################################################### */
+
+
+
+/* scroll-able navbar */
+#navbar_scroll {
+    /* background-color: rgb(112, 84, 141); */
+    /* border: 2px solid red; */
+    /* position: fixed; */
+    /* top: -50px; */
+    width: 100%;
+    display: block;
+    /* transition: top 0.3s; */
+    /* padding: 22px 0; */
+    z-index: 1;
+}
+
+#navbar_scroll a {
+    float: right;
+    display: block;
+    color: var(--black);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 13px;
+}
+#navbar_scroll a:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+
+/* ############################################################################
+############################################################################### */
+
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+    /* background-image: url("img_parallax.png"); */
+    background-image: url("./images/IMG_1520.jpg");
+    /* min-height: 100%; */
+    min-height: 400px;
+}
+.bgimg-2 {
+    background-image: url("./images/IMG_1523.jpg");
+    min-height: 500px;
+}
+
+/* ############################################################################
+############################################################################### */
+
+
+.margin {
+    margin: 0 100px;
+}
+.name {
+    font-family: "Poppins", sans-serif;
+    margin: 130px 0 0 0;
+    padding: 29px 0;
+    font-size: 50px;
+    /* background-color: #f8d447; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greet {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-color);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ############################################################################
+############################################################################### */
+
+
+
+.BMW {
+    background-image: url(1.jpg);
+}
+.BMW:hover{
+    opacity: 0.5;
+    color: black;
+    font-size: 20px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 4px;
+    transition: all 0.3s ease-in
+}
+
+.filterDiv {
+    float: left;
+    background-color: var(--yellow);
+    background-size: cover;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* delete */
+.filterDiv cars {
+    color: red;   
+}
+
+
+/* ############################################################################
+############################################################################### */
+
+/* 
+.flip-box {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #825959;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+  } */
+
+  /* ############################################################################
+############################################################################### */
+
+
+
+.img_about{
+    padding: 150px 0;
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    /* width: 30px; */
+}
+.me{
+    width: 300px;
+}
+.about{
+    /* background-color: antiquewhite; */
+    color: white    ;
+    padding: 30px;
+}
+
+
+
+.footer{
+    color:#797171;
+    background-color:#ffffff;
+    padding: 100px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    font-size: 30px;
+}
+.logos{
+    margin: 20px 0;
+}
+.logo{
+    margin: 10px 20px;
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+/* .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .header h2 {
+    text-align: center;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 2px;
+    background: #aa0436;
+    width: 0%;
+  }
+  
+  .content {
+    padding: 10px 0;
+    margin: 200px auto 0 auto;
+    width: 80%;
+  } */
+
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    /* float: left; */
+    width: 33.33%;
+    /* Hide all elements by default */
+    display: none; 
+    margin: 0 40px 0 40px;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 0px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+  .projects{
+    color: #777;
+    text-align:center;
+    padding:40px 100px;
+    /* text-align: justify; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  
+
+
+  .content {
+    position: relative;
+    display: inline-block; /* This will make the container fit the image size */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-overlay p {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content:hover .image-overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  .content:hover img {
+    filter: blur(5px); /* Apply a blur effect on the image on hover */
+  }
+   
+  .project_title{
+    font-size: 30px;
+    color: rgb(255, 115, 0);
+  }
